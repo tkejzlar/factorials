@@ -47,7 +47,7 @@ void Init_factorials(void)
 {
   rb_cNumeric = rb_define_class("Numeric", rb_cObject);
   rb_cInteger = rb_define_class("Integer", rb_cNumeric);
-  rb_cFixnum = rb_define_class("Fixnum", rb_cInteger);
+  // rb_cFixnum = rb_define_class("Fixnum", rb_cInteger);
 
   rb_define_method(rb_cInteger, "factorial", factorials_num_factorial, 0);
   rb_define_method(rb_cInteger, "double_factorial", factorials_num_double_factorial, 0);
