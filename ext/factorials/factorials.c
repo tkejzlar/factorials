@@ -49,7 +49,7 @@ void Init_factorials(void)
   rb_cInteger = rb_define_class("Integer", rb_cNumeric);
   rb_cFixnum = rb_define_class("Fixnum", rb_cInteger);
 
-  rb_define_method(rb_cFixnum, "factorial", factorials_num_factorial, 0);
-  rb_define_method(rb_cFixnum, "double_factorial", factorials_num_double_factorial, 0);
-  rb_define_method(rb_cFixnum, "superfactorial", factorials_num_superfactorial, 0);
+  rb_define_method(rb_cInteger, "factorial", factorials_num_factorial, 0);
+  rb_define_method(rb_cInteger, "double_factorial", factorials_num_double_factorial, 0);
+  rb_define_method(rb_cInteger, "superfactorial", factorials_num_superfactorial, 0);
 }
